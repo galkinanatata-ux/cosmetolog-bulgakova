@@ -250,7 +250,7 @@ const blogPosts: BlogPost[] = [
                  </div>
                  <div className="hidden md:block w-px h-24 bg-stone-700"></div>
                  <div className="w-24 h-24 md:w-32 md:h-32 shrink-0 rounded-full overflow-hidden border-2 border-stone-600 grayscale opacity-80">
-                     <img src="https://i.ibb.co/9Q6Wt6G/i-1.webp" alt="Coco Chanel" className="w-full h-full object-cover" />
+                     <img src="https://i.ibb.co/9Q6Wt6G/i-1.webp" alt="Coco Chanel" loading="lazy" decoding="async" className="w-full h-full object-cover" />
                  </div>
              </div>
 

@@ -332,7 +332,7 @@ const Quiz: React.FC<QuizProps> = ({ data }) => {
                                >
                                    <div className={`relative aspect-square rounded-xl overflow-hidden mb-3 transition-all duration-300 ${isSelected(opt.id) ? 'ring-2 ring-sage-400 ring-offset-2' : 'hover:ring-2 hover:ring-gray-100 hover:ring-offset-1'}`}>
                                        {opt.image && (
-                                           <img src={opt.image} alt={opt.label} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                                           <img src={opt.image} alt={opt.label} loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                                        )}
                                        {isSelected(opt.id) && (
                                            <div className="absolute inset-0 bg-sage-500/20 flex items-center justify-center backdrop-blur-[1px]">
