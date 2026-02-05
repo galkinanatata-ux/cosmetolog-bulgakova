@@ -533,9 +533,9 @@ const Quiz: React.FC<QuizProps> = ({ data }) => {
                                           .filter(Boolean)
                                           .join(', ');
                                       return (
-                                          <div key={q.id} className="flex justify-between text-sm border-b border-gray-200 border-dotted pb-1 last:border-0">
-                                              <span className="text-gray-500 shrink-0 mr-4">{q.title}</span>
-                                              <span className="font-medium text-sage-600 text-right">{answerLabels}</span>
+                                          <div key={q.id} className="flex flex-col sm:flex-row sm:justify-between text-sm border-b border-gray-200 border-dotted pb-2 last:border-0 gap-1">
+                                              <span className="text-gray-500 text-xs sm:text-sm">{q.title}</span>
+                                              <span className="font-medium text-sage-600 sm:text-right break-words">{answerLabels}</span>
                                           </div>
                                       );
                                   })}
