@@ -453,11 +453,11 @@ const Quiz: React.FC<QuizProps> = ({ data }) => {
                                       </div>
                                   )}
                                   <div className="bg-gray-50 rounded-xl p-5 border border-gray-100 ml-11">
-                                      <div className="flex items-baseline gap-2 mb-1.5">
+                                      <div className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-2 mb-1.5">
                                           <h4 className="font-montserrat font-semibold text-gray-800 text-base leading-snug">
                                               {rec.procedure.name}
                                           </h4>
-                                          <span className="text-sage-500 text-xs font-medium whitespace-nowrap">
+                                          <span className="text-sage-500 text-xs font-medium">
                                               {rec.procedure.categoryLabel}
                                           </span>
                                       </div>
