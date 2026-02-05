@@ -17,18 +17,18 @@ const defaultTabs = [
 ];
 
 const defaultItems: BeforeAfterItem[] = [
-  { id: 1, beforeImage: 'https://i.ibb.co/NgjRFtPK/image.png', afterImage: 'https://i.ibb.co/bjvgNTvb/image.png', tag: 'couperose', description: 'Удаление сосудистой сетки за 1-2 процедуры', details: 'Результат после 1 процедуры на аппарате Capello' },
-  { id: 2, beforeImage: 'https://i.ibb.co/rKtmPTK1/image.png', afterImage: 'https://i.ibb.co/VPBWrf9/image.png', tag: 'pigment', description: 'Работа с пигментацией: быстро и эффективно', details: 'Осветление пигмента после 1-й процедуры фотоомоложения на аппарате Capello' },
-  { id: 3, beforeImage: 'https://i.ibb.co/bjp2K3LG/image.png', afterImage: 'https://i.ibb.co/ZRBL7NNZ/image.png', tag: 'acne', description: 'Лечение проблемной кожи (акне)', details: 'Результат комплексной терапии (4 месяца)' },
-  { id: 4, beforeImage: 'https://i.ibb.co/27BCfwC1/image.png', afterImage: 'https://i.ibb.co/JW25rbB5/image.png', tag: 'cleaning', description: 'Комбинированная чистка лица', details: 'Результат сразу после одной процедуры' },
-  { id: 5, beforeImage: 'https://i.ibb.co/zWs8Pzv9/image.png', afterImage: 'https://i.ibb.co/Q7FphPcn/image.png', tag: 'rejuvenation', description: 'Плазмотерапия: естественное обновление кожи', details: 'Эффект уплотнения кожи и выравнивания тона после курса из 3 процедур' },
-  { id: 6, beforeImage: 'https://i.ibb.co/Z6Cfv44p/image.png', afterImage: 'https://i.ibb.co/2YH0wv3s/image.png', tag: 'couperose', description: 'Удаление сосудов на крыльях носа', details: 'Полное удаление сосудов после 1 процедуры коагуляции' },
-  { id: 8, beforeImage: 'https://i.ibb.co/XfBrG336/image.png', afterImage: 'https://i.ibb.co/2mZZVs0/image.png', tag: 'peeling', description: 'Пилинг: обновление кожи и сужение пор', details: 'Состояние кожи после 1-й процедуры пилинга BioRePeel' },
-  { id: 10, beforeImage: 'https://i.ibb.co/rXtWrm9/DSA.png', afterImage: 'https://i.ibb.co/s7sf28s/DSA.png', tag: 'peeling', description: 'Пилинг: ровный тон и сияние', details: 'Результат сразу после процедуры поверхностного пилинга' },
-  { id: 11, beforeImage: 'https://i.ibb.co/dJ7TXtxr/2.png', afterImage: 'https://i.ibb.co/mrQFDztw/2.png', tag: 'cleaning', description: 'Комбинированная чистка лица', details: 'Результат сразу после процедуры' },
-  { id: 12, beforeImage: 'https://i.ibb.co/qMQp4NzD/image.png', afterImage: 'https://i.ibb.co/wNR4GFk3/image.png', tag: 'acne', description: 'Комплексная терапия акне', details: 'Промежуточный результат лечения: без системных ретиноидов, только наружнее лечение и процедуры' },
-  { id: 13, beforeImage: 'https://i.ibb.co/6cw78tCY/image.png', afterImage: 'https://i.ibb.co/w1YHwHX/image.png', tag: 'pigment', description: 'Фотоомоложение на аппарате Capello', details: 'Результат после 2-х процедур IPL-терапии' },
-  { id: 14, beforeImage: 'https://i.ibb.co/b5GqmcTn/image.png', afterImage: 'https://i.ibb.co/CpMXk6k7/image.png', tag: 'rejuvenation', description: 'Фотоомоложение: выравнивание тона', details: 'Результат после 1 процедуры IPL-терапии с инъекционной подготовкой' },
+  { id: 1, beforeImage: '/images/before-after/1-before.png', afterImage: '/images/before-after/1-after.png', tag: 'couperose', description: 'Удаление сосудистой сетки за 1-2 процедуры', details: 'Результат после 1 процедуры на аппарате Capello' },
+  { id: 2, beforeImage: '/images/before-after/2-before.png', afterImage: '/images/before-after/2-after.png', tag: 'pigment', description: 'Работа с пигментацией: быстро и эффективно', details: 'Осветление пигмента после 1-й процедуры фотоомоложения на аппарате Capello' },
+  { id: 3, beforeImage: '/images/before-after/3-before.png', afterImage: '/images/before-after/3-after.png', tag: 'acne', description: 'Лечение проблемной кожи (акне)', details: 'Результат комплексной терапии (4 месяца)' },
+  { id: 4, beforeImage: '/images/before-after/4-before.png', afterImage: '/images/before-after/4-after.png', tag: 'cleaning', description: 'Комбинированная чистка лица', details: 'Результат сразу после одной процедуры' },
+  { id: 5, beforeImage: '/images/before-after/5-before.png', afterImage: '/images/before-after/5-after.png', tag: 'rejuvenation', description: 'Плазмотерапия: естественное обновление кожи', details: 'Эффект уплотнения кожи и выравнивания тона после курса из 3 процедур' },
+  { id: 6, beforeImage: '/images/before-after/6-before.png', afterImage: '/images/before-after/6-after.png', tag: 'couperose', description: 'Удаление сосудов на крыльях носа', details: 'Полное удаление сосудов после 1 процедуры коагуляции' },
+  { id: 8, beforeImage: '/images/before-after/8-before.png', afterImage: '/images/before-after/8-after.png', tag: 'peeling', description: 'Пилинг: обновление кожи и сужение пор', details: 'Состояние кожи после 1-й процедуры пилинга BioRePeel' },
+  { id: 10, beforeImage: '/images/before-after/10-before.png', afterImage: '/images/before-after/10-after.png', tag: 'peeling', description: 'Пилинг: ровный тон и сияние', details: 'Результат сразу после процедуры поверхностного пилинга' },
+  { id: 11, beforeImage: '/images/before-after/11-before.png', afterImage: '/images/before-after/11-after.png', tag: 'cleaning', description: 'Комбинированная чистка лица', details: 'Результат сразу после процедуры' },
+  { id: 12, beforeImage: '/images/before-after/12-before.png', afterImage: '/images/before-after/12-after.png', tag: 'acne', description: 'Комплексная терапия акне', details: 'Промежуточный результат лечения: без системных ретиноидов, только наружнее лечение и процедуры' },
+  { id: 13, beforeImage: '/images/before-after/13-before.png', afterImage: '/images/before-after/13-after.png', tag: 'pigment', description: 'Фотоомоложение на аппарате Capello', details: 'Результат после 2-х процедур IPL-терапии' },
+  { id: 14, beforeImage: '/images/before-after/14-before.png', afterImage: '/images/before-after/14-after.png', tag: 'rejuvenation', description: 'Фотоомоложение: выравнивание тона', details: 'Результат после 1 процедуры IPL-терапии с инъекционной подготовкой' },
 ];
 
 const BeforeAfter: React.FC<BeforeAfterProps> = ({ data }) => {

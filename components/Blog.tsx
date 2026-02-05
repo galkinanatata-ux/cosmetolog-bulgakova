@@ -19,7 +19,7 @@ const blogPosts: BlogPost[] = [
     title: 'Беременность, ГВ\nи косметолог: Полный\nгид по безопасности',
     excerpt: 'Беременность и материнство — период, когда организм женщины живет по особым законам. Гормональная перестройка часто преподносит сюрпризы...',
     gridClass: 'lg:col-span-7', 
-    image: 'https://i.ibb.co/sdYCLpNy/Frame-800.png',
+    image: '/images/blog/post1.png',
     readTime: '4 мин',
     imagePosition: 'object-[70%_0] md:object-top', // Shifted 20% left on mobile, top on desktop
     content: (
@@ -129,7 +129,7 @@ const blogPosts: BlogPost[] = [
     title: 'Тоник: Маркетинг\nили фундамент\nздоровой кожи?',
     excerpt: 'Многие до сих пор думают: «Тоник? Просто вода в красивой бутылке». Но именно этот шаг в уходе решает, будет ли кожа сиять...',
     gridClass: 'lg:col-span-5', 
-    image: 'https://i.ibb.co/21N6YSmM/Frame-802.png',
+    image: '/images/blog/post2.png',
     readTime: '3 мин',
     imagePosition: 'object-right',
     content: (
@@ -238,7 +238,7 @@ const blogPosts: BlogPost[] = [
     title: 'Руки — предатели:\nПочему они стареют\nраньше лица?',
     excerpt: 'Наряду с шеей именно руки чаще всего выдают возраст. Тонкая кожа, пигментные пятна, морщинки — всё это появляется раньше...',
     gridClass: 'lg:col-span-5', 
-    image: 'https://i.ibb.co/273sB0hd/Frame-801.png',
+    image: '/images/blog/post3.png',
     readTime: '2 мин',
     content: (
         <div className="space-y-12 text-gray-800">
@@ -250,7 +250,7 @@ const blogPosts: BlogPost[] = [
                  </div>
                  <div className="hidden md:block w-px h-24 bg-stone-700"></div>
                  <div className="w-24 h-24 md:w-32 md:h-32 shrink-0 rounded-full overflow-hidden border-2 border-stone-600 grayscale opacity-80">
-                     <img src="https://i.ibb.co/9Q6Wt6G/i-1.webp" alt="Coco Chanel" loading="lazy" decoding="async" className="w-full h-full object-cover" />
+                     <img src="/images/blog/coco.webp" alt="Coco Chanel" loading="lazy" decoding="async" className="w-full h-full object-cover" />
                  </div>
              </div>
 
@@ -338,7 +338,7 @@ const blogPosts: BlogPost[] = [
     title: '«Гусиные лапки»\nв 25 лет:\nПлата за эмоции',
     excerpt: 'Морщинки-лучики в уголках глаз часто появляются уже в 20–25 лет. В отличие от глубоких заломов, эти «птичьи следы» — плата за искренность...',
     gridClass: 'lg:col-span-7',
-    image: 'https://i.ibb.co/r2DP7kTF/Frame-799.png',
+    image: '/images/blog/post4.png',
     readTime: '3 мин',
     content: (
         <div className="space-y-12 text-gray-800">

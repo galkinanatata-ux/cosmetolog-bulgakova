@@ -32,9 +32,9 @@ const defaultTextReviews: ReviewItem[] = [
 ];
 
 const defaultScreenshots: ReviewScreenshot[] = [
-  { id: 1, src: 'https://i.ibb.co/CKxtWzg8/14.png' },
-  { id: 2, src: 'https://i.ibb.co/Ld391FNP/2.png' },
-  { id: 3, src: 'https://i.ibb.co/9krPTyKr/6.png' },
+  { id: 1, src: '/images/reviews/1.png' },
+  { id: 2, src: '/images/reviews/2.png' },
+  { id: 3, src: '/images/reviews/3.png' },
 ];
 
 const Reviews: React.FC<ReviewsProps> = ({ data }) => {

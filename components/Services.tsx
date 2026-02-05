@@ -219,7 +219,7 @@ const Services: React.FC<ServicesProps> = ({ onNavigate, onOpenContactModal, con
                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                            <div className="relative rounded-[20px] overflow-hidden shadow-md group bg-gray-100 h-[250px] md:h-[300px]">
                                 <img
-                                    src="https://i.ibb.co/7dc5ngst/1.png" 
+                                    src="/images/services/1.png" 
                                     alt="До процедуры эпиляции"
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                     loading="eager" 
@@ -231,7 +231,7 @@ const Services: React.FC<ServicesProps> = ({ onNavigate, onOpenContactModal, con
                            </div>
                            <div className="relative rounded-[20px] overflow-hidden shadow-md group bg-gray-100 h-[250px] md:h-[300px]">
                                 <img
-                                    src="https://i.ibb.co/1J9hCLG9/2.png" 
+                                    src="/images/services/2.png" 
                                     alt="После процедуры эпиляции"
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                     loading="eager" 

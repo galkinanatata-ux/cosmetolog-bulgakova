@@ -33,7 +33,7 @@ export const siteConfig: SiteConfig = {
     vk: 'https://vk.com/cosmetologist_brn',
     max: 'https://max.ru/u/f9LHodD0cOKYto_MCKQG2Qnif9VenEoHTGR88WAesB6ZNkwQs5ehc4-MGAs',
     mapLink: 'https://yandex.ru/maps/-/CDq~yC1J',
-    mapImage: 'https://i.ibb.co/B58jC0Zy/2026-01-28-11-37-42.png'
+    mapImage: '/images/map/map.png'
   },
 
   // --- МЕНЮ НАВИГАЦИИ ---
@@ -62,8 +62,8 @@ export const siteConfig: SiteConfig = {
       data: {
         name: 'Косметолог Булгакова Светлана',
         profession: 'Врач-косметолог в Барнауле',
-        photo: 'https://i.ibb.co/k6SSTKV8/039-1-1-1.png',
-        procedurePhoto: 'https://i.ibb.co/mFyjjfx9/10-1.png',
+        photo: '/images/hero/og-image.png',
+        procedurePhoto: '/images/hero/main.png',
         badgeText: [
           'На&nbsp;консультации соберу анамнез и&nbsp;проведу диагностику вашей кожи, составлю план лечения, дам рекомендации по&nbsp;домашнему уходу.',
           'Порекомендую только те процедуры, которые будут эффективны именно в вашем случае. Вы получите чёткое понимание: <strong>что, как и главное почему мы будем делать</strong>.'
@@ -116,7 +116,7 @@ export const siteConfig: SiteConfig = {
           { 
             id: 1, 
             title: 'Аппаратная косметология', 
-            image: 'https://i.ibb.co/99rpMsCP/1.png', 
+            image: '/images/services/story1.png', 
             height: 'h-[385px]',
             borderRadius: 'rounded-[30px]',
             link: 'hardware'
@@ -124,7 +124,7 @@ export const siteConfig: SiteConfig = {
           { 
             id: 2, 
             title: 'Эстетическая косметология', 
-            image: 'https://i.ibb.co/rK7yfzLq/0012.png', 
+            image: '/images/services/story2.png', 
             height: 'h-[285px]', 
             borderRadius: 'rounded-[30px]',
             link: 'esthetic'
@@ -132,7 +132,7 @@ export const siteConfig: SiteConfig = {
           { 
             id: 3, 
             title: 'Элос-эпиляция', 
-            image: 'https://i.ibb.co/1Y1PqLRG/1.png', 
+            image: '/images/services/story3.png', 
             height: 'h-[285px]',
             borderRadius: 'rounded-[30px]',
             link: 'modal' // Special keyword for modal opening
@@ -140,7 +140,7 @@ export const siteConfig: SiteConfig = {
           { 
             id: 4, 
             title: 'Инъекционная косметология', 
-            image: 'https://i.ibb.co/x0wQYdS/2-1.png', 
+            image: '/images/services/story4.png', 
             height: 'h-[385px]', 
             borderRadius: 'rounded-[30px]',
             link: 'injections'
@@ -166,16 +166,16 @@ export const siteConfig: SiteConfig = {
         items: [
           {
             id: 1,
-            beforeImage: 'https://i.ibb.co/NgjRFtPK/image.png',
-            afterImage: 'https://i.ibb.co/bjvgNTvb/image.png',
+            beforeImage: '/images/before-after/1-before.png',
+            afterImage: '/images/before-after/1-after.png',
             tag: 'couperose',
             description: 'Удаление сосудистой сетки за 1-2 процедуры',
             details: 'Результат после 1 процедуры на аппарате Capello',
           },
           {
             id: 2,
-            beforeImage: 'https://i.ibb.co/rKtmPTK1/image.png',
-            afterImage: 'https://i.ibb.co/VPBWrf9/image.png',
+            beforeImage: '/images/before-after/2-before.png',
+            afterImage: '/images/before-after/2-after.png',
             tag: 'pigment',
             description: 'Работа с пигментацией: быстро и эффективно',
             details: 'Осветление пигмента после 1-й процедуры фотоомоложения на аппарате Capello',

@@ -16,10 +16,10 @@ const defaultQuestions: QuizQuestion[] = [
     subtitle: 'Выберите одну зону для персонального плана',
     layout: 'grid',
     options: [
-      { id: 'face', label: 'Лицо', image: 'https://i.ibb.co/DgKQWgmJ/1.png' },
-      { id: 'neck', label: 'Шея', image: 'https://i.ibb.co/CK8WRCnn/2.png' },
-      { id: 'decollete', label: 'Декольте', image: 'https://i.ibb.co/xSFLqsw2/3.png' },
-      { id: 'hands', label: 'Руки', image: 'https://i.ibb.co/7J1SPyML/4.jpg' },
+      { id: 'face', label: 'Лицо', image: '/images/quiz/face.png' },
+      { id: 'neck', label: 'Шея', image: '/images/quiz/neck.png' },
+      { id: 'decollete', label: 'Декольте', image: '/images/quiz/decollete.png' },
+      { id: 'hands', label: 'Руки', image: '/images/quiz/hands.jpg' },
     ],
   },
   {
@@ -482,7 +482,7 @@ const Quiz: React.FC<QuizProps> = ({ data }) => {
                   <div className="w-full max-w-2xl bg-sage-50 border border-sage-200 rounded-xl p-6 md:p-8 mb-8 text-left">
                       <div className="flex flex-col md:flex-row gap-5 md:gap-6 mb-5">
                           <img
-                              src="https://i.ibb.co/wh684Skw/image.jpg"
+                              src="/images/quiz/cosmetologist.jpg"
                               alt="Косметолог Светлана Булгакова"
                               className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-2 border-sage-200 shrink-0 mx-auto md:mx-0"
                           />
