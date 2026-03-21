@@ -23,7 +23,7 @@ export const prices = {
 
   // Биоревитализация - препараты для лица
   biorevFace: [
-    { name: 'Rejuven 25 (2 мл)', price: '6 500 ₽' },
+    { name: 'Rejuven 25 (2 мл)', price: '6 800 ₽' },
     { name: 'Viscoline (1 мл / 2 мл)', price: '5 400 / 6 800 ₽' },
     { name: 'MiraLine gidro (2 мл)', price: '6 500 ₽' },
     { name: 'AquaShine (2 мл)', price: '7 000 ₽' },
@@ -50,10 +50,10 @@ export const prices = {
   // Мезотерапия
   meso: [
     { name: 'Filorga NCTF 136 HA (1.5 мл / 3 мл)', price: '5 000 / 7 500 ₽' },
-    { name: 'Mevita 09 (2 мл / 4 мл)', price: '4 500 / 6 150 ₽' },
-    { name: 'Mevita 18 (3.5 мл)', price: '5 500 ₽' },
-    { name: 'Mevita 25 (2 мл / 4 мл)', price: '4 800 / 6 500 ₽' },
-    { name: 'Mevita С (2 мл / 4 мл)', price: '4 500 / 6 150 ₽' },
+    { name: 'Mevita 09 (2 мл / 4 мл)', price: '4 800 / 6 750 ₽' },
+    { name: 'Mevita 18 (3.5 мл)', price: '5 800 ₽' },
+    { name: 'Mevita 25 (2 мл / 4 мл)', price: '5 100 / 7 100 ₽' },
+    { name: 'Mevita С (2 мл / 4 мл)', price: '4 800 / 6 750 ₽' },
   ],
 
   // Контурная пластика
