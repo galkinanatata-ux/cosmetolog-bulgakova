@@ -309,7 +309,7 @@ const InjectionCosmetology: React.FC<InjectionPageProps> = ({ onNavigate, onOpen
                             <span className="text-sage-600 font-bold text-xl whitespace-nowrap">4 000 ₽</span>
                         </div>
                         <div className="flex justify-between items-center border-b border-dotted border-gray-200 pb-2">
-                            <span className="text-gray-800 font-medium">Cortexil (1 пробирка)</span>
+                            <span className="text-gray-800 font-medium">PRP (1 пробирка)</span>
                             <span className="text-sage-600 font-bold text-xl whitespace-nowrap">5 500 ₽</span>
                         </div>
                     </div>
