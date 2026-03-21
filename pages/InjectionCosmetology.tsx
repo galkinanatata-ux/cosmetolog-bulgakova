@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import Header, { NavItem } from '../components/Header';
 import Footer from '../components/Footer';
 import { ArrowLeft, ArrowRight, Plus, Minus, X, Calendar, ShieldCheck, Zap, AlertCircle, Clock, Droplet, Sparkles, UserCheck, Check, Eye, Activity, ArrowUpRight } from 'lucide-react';
+import { prices } from '../data/prices';
 
 interface InjectionPageProps {
   onNavigate: (page: 'home' | 'injections' | 'esthetic' | 'hardware') => void;
@@ -263,11 +264,11 @@ const InjectionCosmetology: React.FC<InjectionPageProps> = ({ onNavigate, onOpen
                     <div className="space-y-4">
                         <div className="flex justify-between items-center border-b border-dotted border-gray-300 pb-2">
                             <span className="text-gray-700 font-medium text-base">Диспорт (Dysport)</span>
-                            <span className="text-sage-600 font-bold text-lg whitespace-nowrap">85 ₽</span>
+                            <span className="text-sage-600 font-bold text-lg whitespace-nowrap">{prices.botox.dysport}</span>
                         </div>
                         <div className="flex justify-between items-center border-b border-dotted border-gray-300 pb-2">
                             <span className="text-gray-700 font-medium text-base">Релатокс (Relatox)</span>
-                            <span className="text-sage-600 font-bold text-lg whitespace-nowrap">260 ₽</span>
+                            <span className="text-sage-600 font-bold text-lg whitespace-nowrap">{prices.botox.relatox}</span>
                         </div>
                     </div>
                 </div>
@@ -306,11 +307,11 @@ const InjectionCosmetology: React.FC<InjectionPageProps> = ({ onNavigate, onOpen
                     <div className="space-y-4">
                         <div className="flex justify-between items-center border-b border-dotted border-gray-200 pb-2">
                             <span className="text-gray-800 font-medium">Meaplasma (1 пробирка)</span>
-                            <span className="text-sage-600 font-bold text-xl whitespace-nowrap">4 000 ₽</span>
+                            <span className="text-sage-600 font-bold text-xl whitespace-nowrap">{prices.plasma.meaplasma}</span>
                         </div>
                         <div className="flex justify-between items-center border-b border-dotted border-gray-200 pb-2">
                             <span className="text-gray-800 font-medium">PRP (1 пробирка)</span>
-                            <span className="text-sage-600 font-bold text-xl whitespace-nowrap">5 500 ₽</span>
+                            <span className="text-sage-600 font-bold text-xl whitespace-nowrap">{prices.plasma.prp}</span>
                         </div>
                     </div>
                 </div>
@@ -350,21 +351,7 @@ const InjectionCosmetology: React.FC<InjectionPageProps> = ({ onNavigate, onOpen
                         <div>
                              <h4 className="font-serif font-bold italic text-sage-600 text-lg mb-4 border-b border-sage-200 pb-2">Препараты для лица</h4>
                              <ul className="space-y-3">
-                                {[
-                                    { name: 'Rejuven 25 (2 мл)', price: '6 500 ₽' },
-                                    { name: 'Viscoline (1 мл / 2 мл)', price: '5 400 / 6 800 ₽' },
-                                    { name: 'MiraLine gidro (2 мл)', price: '6 500 ₽' },
-                                    { name: 'AquaShine (2 мл)', price: '7 000 ₽' },
-                                    { name: 'Bioregen (1 мл)', price: '7 000 ₽' },
-                                    { name: 'Nucleoform (2 мл)', price: '9 500 ₽' },
-                                    { name: 'Nucleoform Rich (2 мл)', price: '9 700 ₽' },
-                                    { name: 'Revi Silk (1 мл)', price: '8 300 ₽' },
-                                    { name: 'Revi Strong (1 мл / 2 мл)', price: '9 000 / 11 150 ₽' },
-                                    { name: 'Novacutan Ybio/Sbio (2 мл)', price: '13 000 ₽' },
-                                    { name: 'Novacutan Bio Pro (2 мл)', price: '13 500 ₽' },
-                                    { name: 'Meso Wharton P199 (1.5 мл)', price: '13 500 ₽' },
-                                    { name: 'Meso-Xanthin (1,5 мл)', price: '13 500 ₽' },
-                                ].map((item, i) => (
+                                {prices.biorevFace.map((item, i) => (
                                     <li key={i} className="flex justify-between items-end border-b border-dotted border-gray-200 pb-1 leading-snug">
                                         <span className="text-gray-700 text-base font-medium">{item.name}</span>
                                         <span className="text-sage-600 font-bold text-lg whitespace-nowrap ml-2">{item.price}</span>
@@ -377,13 +364,7 @@ const InjectionCosmetology: React.FC<InjectionPageProps> = ({ onNavigate, onOpen
                         <div>
                              <h4 className="font-serif font-bold italic text-sage-600 text-lg mb-4 border-b border-sage-200 pb-2">Зона вокруг глаз</h4>
                              <ul className="space-y-3">
-                                {[
-                                    { name: 'Revi Eye (0,5 / 1 мл)', price: '4 700 / 8 000 ₽' },
-                                    { name: 'Микроколлост 0,05 мл', price: '7 000 ₽' },
-                                    { name: 'Сферогель Medium (0,6 мл)', price: '7 200 ₽' },
-                                    { name: 'Сферогель Long Fine (0,6 мл)', price: '10 700 ₽' },
-                                    { name: 'Mesoeye C71 1 мл', price: '13 500 ₽' },
-                                ].map((item, i) => (
+                                {prices.biorevEyes.map((item, i) => (
                                     <li key={i} className="flex justify-between items-end border-b border-dotted border-gray-200 pb-1 leading-snug">
                                         <span className="text-gray-700 text-base font-medium">{item.name}</span>
                                         <span className="text-sage-600 font-bold text-lg whitespace-nowrap ml-2">{item.price}</span>
@@ -436,13 +417,7 @@ const InjectionCosmetology: React.FC<InjectionPageProps> = ({ onNavigate, onOpen
                 </div>
                 <div className="lg:col-span-8 bg-white p-8 rounded-[30px] border border-gray-100 shadow-sm relative z-10">
                     <div className="space-y-4">
-                        {[
-                            { name: 'Filorga NCTF 136 HA (1.5 мл / 3 мл)', price: '5 000 / 7 500 ₽' },
-                            { name: 'Mevita 09 (2 мл / 4 мл)', price: '4 500 / 6 150 ₽' },
-                            { name: 'Mevita 18 (3.5 мл)', price: '5 500 ₽' },
-                            { name: 'Mevita 25 (2 мл / 4 мл)', price: '4 800 / 6 500 ₽' },
-                            { name: 'Mevita С (2 мл / 4 мл)', price: '4 500 / 6 150 ₽' }
-                        ].map((item, i) => (
+                        {prices.meso.map((item, i) => (
                             <div key={i} className="flex justify-between items-center border-b border-dotted border-gray-300 pb-2">
                                 <span className="text-gray-700 font-medium text-base">{item.name}</span>
                                 <span className="text-sage-600 font-bold text-lg whitespace-nowrap ml-2">{item.price}</span>
@@ -473,23 +448,23 @@ const InjectionCosmetology: React.FC<InjectionPageProps> = ({ onNavigate, onOpen
                     <div className="space-y-4">
                         <div className="flex justify-between items-center border-b border-dotted border-gray-300 pb-2">
                             <span className="text-gray-700 font-medium text-base">Viscoline (1 мл)</span>
-                            <span className="text-sage-600 font-bold text-lg whitespace-nowrap">10 000 ₽</span>
+                            <span className="text-sage-600 font-bold text-lg whitespace-nowrap">{prices.contour.viscoline}</span>
                         </div>
                         <div className="flex justify-between items-center border-b border-dotted border-gray-300 pb-2">
                             <span className="text-gray-700 font-medium text-base">Biohyalux (1 мл)</span>
-                            <span className="text-sage-600 font-bold text-lg whitespace-nowrap">10 000 ₽</span>
+                            <span className="text-sage-600 font-bold text-lg whitespace-nowrap">{prices.contour.biohyalux}</span>
                         </div>
                         <div className="flex justify-between items-center border-b border-dotted border-gray-300 pb-2">
                             <span className="text-gray-700 font-medium text-base">MiraLine (1 мл)</span>
-                            <span className="text-sage-600 font-bold text-lg whitespace-nowrap">10 500 ₽</span>
+                            <span className="text-sage-600 font-bold text-lg whitespace-nowrap">{prices.contour.miraline}</span>
                         </div>
                          <div className="flex justify-between items-center border-b border-dotted border-gray-300 pb-2">
                             <span className="text-gray-700 font-medium text-base">Regenyal (1 мл)</span>
-                            <span className="text-sage-600 font-bold text-lg whitespace-nowrap">13 500 ₽</span>
+                            <span className="text-sage-600 font-bold text-lg whitespace-nowrap">{prices.contour.regenyal}</span>
                         </div>
                         <div className="flex justify-between items-center border-b border-dotted border-gray-300 pb-2">
                             <span className="text-gray-700 font-medium text-base">Novacutan (1 мл)</span>
-                            <span className="text-sage-600 font-bold text-lg whitespace-nowrap">14 000 ₽</span>
+                            <span className="text-sage-600 font-bold text-lg whitespace-nowrap">{prices.contour.novacutan}</span>
                         </div>
                     </div>
                 </div>
@@ -525,15 +500,7 @@ const InjectionCosmetology: React.FC<InjectionPageProps> = ({ onNavigate, onOpen
                 </div>
                 <div className="lg:col-span-8 bg-white p-8 rounded-[30px] border border-gray-100 shadow-sm relative z-10">
                     <div className="space-y-4">
-                        {[
-                            { name: 'Viscoline (1 мл)', price: '10 000 ₽' },
-                            { name: 'Biohyalux (1 мл)', price: '10 000 ₽' },
-                            { name: 'MiraLine (1 мл)', price: '10 500 ₽' },
-                            { name: 'Dermallure (1 мл)', price: '12 000 ₽' },
-                            { name: 'Regenyal Idea Lips (1 мл)', price: '13 500 ₽' },
-                            { name: 'Novacutan Fbio (1 мл)', price: '14 000 ₽' },
-                            { name: 'Stylage M (1 мл)', price: '15 000 ₽' },
-                        ].map((item, i) => (
+                        {prices.lips.map((item, i) => (
                             <div key={i} className="flex justify-between items-center border-b border-dotted border-gray-300 pb-2">
                                 <span className="text-gray-700 font-medium text-base">{item.name}</span>
                                 <span className="text-sage-600 font-bold text-lg whitespace-nowrap">{item.price}</span>

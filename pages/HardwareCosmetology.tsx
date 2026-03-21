@@ -4,6 +4,7 @@ import Header, { NavItem } from '../components/Header';
 import Footer from '../components/Footer';
 import { ArrowLeft, ArrowRight, Check, ShieldCheck, HelpCircle, Plus, Minus, Star, Tag } from 'lucide-react';
 import { hardwareFaqData } from '../data/hardwareFaq';
+import { prices } from '../data/prices';
 
 interface HardwarePageProps {
   onNavigate: (page: 'home' | 'injections' | 'esthetic' | 'hardware') => void;
@@ -161,7 +162,7 @@ const HardwareCosmetology: React.FC<HardwarePageProps> = ({ onNavigate, onOpenCo
                     <div className="lg:col-span-8 bg-white p-8 rounded-[30px] border border-gray-100 shadow-sm relative z-10">
                         <h4 className="font-serif font-bold italic text-sage-600 text-xl mb-4">Стоимость процедуры</h4>
                         <ul className="space-y-3 mb-4">
-                            {[{ name: 'Лоб', price: '2 000 ₽' }, { name: 'На скулах', price: 'от 2 500 ₽' }, { name: 'На щеках', price: 'от 2 500 ₽' }, { name: 'Кисти рук', price: '2 500 ₽' }, { name: 'Всё лицо', price: '5 000 ₽' }].map((item, i) => (
+                            {prices.pigmentation.map((item, i) => (
                                 <li key={i} className="flex justify-between items-end border-b border-dotted border-gray-200 pb-1">
                                     <span className="text-gray-700 text-base">{item.name}</span>
                                     <span className="font-bold text-sage-600 text-lg whitespace-nowrap">{item.price}</span>
@@ -197,7 +198,7 @@ const HardwareCosmetology: React.FC<HardwarePageProps> = ({ onNavigate, onOpenCo
                     <div className="lg:col-span-8 bg-white p-8 rounded-[30px] border border-gray-100 shadow-sm relative z-10">
                         <h4 className="font-serif font-bold italic text-sage-600 text-xl mb-4">Стоимость процедуры</h4>
                         <ul className="space-y-3">
-                            {[{ name: 'Подбородок', price: '1 500 ₽' }, { name: 'Крылья носа', price: '2 000 ₽' }, { name: 'Кисти рук', price: '2 500 ₽' }, { name: 'Скулы', price: '3 000 ₽' }, { name: 'Щеки', price: '3 500 ₽' }, { name: 'Всё лицо', price: '5 000 ₽' }].map((item, i) => (
+                            {prices.couperose.map((item, i) => (
                                 <li key={i} className="flex justify-between items-end border-b border-dotted border-gray-200 pb-1"><span className="text-gray-700 text-base">{item.name}</span><span className="font-bold text-sage-600 text-lg whitespace-nowrap">{item.price}</span></li>
                             ))}
                         </ul>
@@ -230,7 +231,7 @@ const HardwareCosmetology: React.FC<HardwarePageProps> = ({ onNavigate, onOpenCo
                     <div className="lg:col-span-8 bg-white p-8 rounded-[30px] border border-gray-100 shadow-sm relative z-10">
                         <h4 className="font-serif font-bold italic text-sage-600 text-xl mb-4">Стоимость процедуры</h4>
                         <ul className="space-y-3">
-                            {[{ name: 'Лицо полностью', price: '5 000 ₽' }, { name: 'Лицо + шея', price: '6 000 ₽' }, { name: 'Лицо + шея + декольте', price: '7 500 ₽' }, { name: 'Кисти рук', price: '2 500 ₽' }].map((item, i) => (
+                            {prices.rejuvenation.map((item, i) => (
                                 <li key={i} className="flex justify-between items-end border-b border-dotted border-gray-200 pb-1"><span className="text-gray-700 text-base">{item.name}</span><span className="font-bold text-sage-600 text-lg whitespace-nowrap">{item.price}</span></li>
                             ))}
                         </ul>
@@ -263,30 +264,7 @@ const HardwareCosmetology: React.FC<HardwarePageProps> = ({ onNavigate, onOpenCo
              </div>
              
              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                 {[
-                     {
-                         title: 'Фотоомоложение + Пигментация',
-                         desc: 'Идеально для выравнивания тона',
-                         price: '6 000 ₽',
-                         oldPrice: '10 000 ₽',
-                         benefit: 'Выгода 4 000 ₽'
-                     },
-                     {
-                         title: 'Фотоомоложение + Сосуды',
-                         desc: 'Убираем красноту и уплотняем кожу',
-                         price: '6 000 ₽',
-                         oldPrice: '10 000 ₽',
-                         benefit: 'Выгода 4 000 ₽'
-                     },
-                     {
-                         title: 'Фотоомоложение + Пигментация + Сосуды',
-                         desc: 'Тотальная проработка всех проблем за 1 сеанс',
-                         price: '7 000 ₽',
-                         oldPrice: '15 000 ₽',
-                         benefit: 'Выгода 8 000 ₽',
-                         isHit: true
-                     }
-                 ].map((offer, idx) => (
+                 {prices.offers.map((offer, idx) => (
                      <div key={idx} className={`bg-sage-50 rounded-[30px] p-8 border border-sage-100 shadow-sm hover:shadow-md transition-all flex flex-col h-full group relative overflow-hidden ${offer.isHit ? 'ring-2 ring-sage-400 ring-offset-2' : ''}`}>
                          <div className="flex flex-wrap gap-2 mb-4 relative z-10 self-start">
                              <div className="bg-white text-sage-600 text-xs font-bold uppercase tracking-widest py-1.5 px-3 rounded-full border border-sage-200">

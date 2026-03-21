@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import Header, { NavItem } from '../components/Header';
 import Footer from '../components/Footer';
 import { ArrowLeft, ArrowRight, Plus, Minus, X, Check, Droplet, Sparkles, Gem, Wind, Clock, Star, Shield, AlertTriangle, UserCheck, ArrowUpRight, Heart, Smile } from 'lucide-react';
+import { prices } from '../data/prices';
 
 interface EstheticPageProps {
   onNavigate: (page: 'home' | 'injections' | 'esthetic' | 'hardware') => void;
@@ -194,15 +195,15 @@ const EstheticCosmetology: React.FC<EstheticPageProps> = ({ onNavigate, onOpenCo
                     <div className="space-y-4">
                         <div className="flex justify-between items-center border-b border-dotted border-gray-300 pb-2">
                             <span className="text-gray-700 font-medium text-base">Аппаратная чистка</span>
-                            <span className="text-sage-600 font-bold text-lg whitespace-nowrap">2 400 ₽</span>
+                            <span className="text-sage-600 font-bold text-lg whitespace-nowrap">{prices.cleaning.apparatus}</span>
                         </div>
                         <div className="flex justify-between items-center border-b border-dotted border-gray-300 pb-2">
                             <span className="text-gray-700 font-medium text-base">Комбинированная чистка</span>
-                            <span className="text-sage-600 font-bold text-lg whitespace-nowrap">2 800 ₽</span>
+                            <span className="text-sage-600 font-bold text-lg whitespace-nowrap">{prices.cleaning.combined}</span>
                         </div>
                         <div className="flex justify-between items-center border-b border-dotted border-gray-300 pb-2">
                             <span className="text-gray-700 font-medium text-base">Механическая чистка</span>
-                            <span className="text-sage-600 font-bold text-lg whitespace-nowrap">3 200 ₽</span>
+                            <span className="text-sage-600 font-bold text-lg whitespace-nowrap">{prices.cleaning.mechanical}</span>
                         </div>
                     </div>
                 </div>
@@ -258,29 +259,29 @@ const EstheticCosmetology: React.FC<EstheticPageProps> = ({ onNavigate, onOpenCo
                             <div className="space-y-3">
                                 <div className="flex justify-between items-center border-b border-dotted border-gray-300 pb-1">
                                     <span className="text-gray-700 font-medium text-base">TC+</span>
-                                    <span className="text-sage-600 font-bold text-lg whitespace-nowrap">2 600 ₽</span>
+                                    <span className="text-sage-600 font-bold text-lg whitespace-nowrap">{prices.peelsBiorev.tcPlus}</span>
                                 </div>
                                 <div className="flex justify-between items-center border-b border-dotted border-gray-300 pb-1">
                                     <span className="text-gray-700 font-medium text-base">BioRePeelCl3</span>
-                                    <span className="text-sage-600 font-bold text-lg whitespace-nowrap">3 000 ₽</span>
+                                    <span className="text-sage-600 font-bold text-lg whitespace-nowrap">{prices.peelsBiorev.bioRePeelCl3}</span>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div>
                             <h5 className="font-montserrat font-bold text-sage-500 text-sm uppercase tracking-widest mb-3">Желтый (Ретиноловый)</h5>
                             <div className="space-y-3">
                                 <div className="flex justify-between items-center border-b border-dotted border-gray-300 pb-1">
                                     <span className="text-gray-700 font-medium text-base">TimeCode</span>
-                                    <span className="text-sage-600 font-bold text-lg whitespace-nowrap">3 000 ₽</span>
+                                    <span className="text-sage-600 font-bold text-lg whitespace-nowrap">{prices.peelsRetinol.timeCode}</span>
                                 </div>
                                 <div className="flex justify-between items-center border-b border-dotted border-gray-300 pb-1">
                                     <span className="text-gray-700 font-medium text-base">MediDerma</span>
-                                    <span className="text-sage-600 font-bold text-lg whitespace-nowrap">3 500 ₽</span>
+                                    <span className="text-sage-600 font-bold text-lg whitespace-nowrap">{prices.peelsRetinol.mediDerma}</span>
                                 </div>
                                 <div className="flex justify-between items-center border-b border-dotted border-gray-300 pb-1">
                                     <span className="text-gray-700 font-medium text-base">DermaTime</span>
-                                    <span className="text-sage-600 font-bold text-lg whitespace-nowrap">3 500 ₽</span>
+                                    <span className="text-sage-600 font-bold text-lg whitespace-nowrap">{prices.peelsRetinol.dermaTime}</span>
                                 </div>
                             </div>
                         </div>
@@ -321,15 +322,15 @@ const EstheticCosmetology: React.FC<EstheticPageProps> = ({ onNavigate, onOpenCo
                     <div className="space-y-4">
                         <div className="flex justify-between items-center border-b border-dotted border-gray-300 pb-2">
                             <span className="text-gray-700 font-medium text-base">Карбокситерапия</span>
-                            <span className="text-sage-600 font-bold text-lg whitespace-nowrap">2 200 ₽</span>
+                            <span className="text-sage-600 font-bold text-lg whitespace-nowrap">{prices.care.carboxytherapy}</span>
                         </div>
                         <div className="flex justify-between items-center border-b border-dotted border-gray-300 pb-2">
                             <span className="text-gray-700 font-medium text-base">Бриллиантовый уход</span>
-                            <span className="text-sage-600 font-bold text-lg whitespace-nowrap">2 700 ₽</span>
+                            <span className="text-sage-600 font-bold text-lg whitespace-nowrap">{prices.care.diamond}</span>
                         </div>
                         <div className="flex justify-between items-center border-b border-dotted border-gray-300 pb-2">
                             <span className="text-gray-700 font-medium text-base">Газожидкостный пилинг</span>
-                            <span className="text-sage-600 font-bold text-lg whitespace-nowrap">2 300 ₽</span>
+                            <span className="text-sage-600 font-bold text-lg whitespace-nowrap">{prices.care.gasLiquidPeeling}</span>
                         </div>
                     </div>
                 </div>
