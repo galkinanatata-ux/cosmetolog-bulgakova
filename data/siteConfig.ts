@@ -28,7 +28,6 @@ export const siteConfig: SiteConfig = {
     phone: '+79039496603',
     phoneDisplay: '+7 (903) 949-66-03',
     address: 'г. Барнаул, ул. Малахова 154 б',
-    instagram: 'https://www.instagram.com/cosmetologist_brn',
     telegram: 'https://t.me/cosmetologbulgakova',
     vk: 'https://vk.com/cosmetologist_brn',
     max: 'https://max.ru/u/f9LHodD0cOKYto_MCKQG2Qnif9VenEoHTGR88WAesB6ZNkwQs5ehc4-MGAs',

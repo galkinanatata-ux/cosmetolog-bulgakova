@@ -331,7 +331,6 @@ export interface ContactInfo {
   phone: string;
   phoneDisplay: string;
   address: string;
-  instagram: string;
   telegram: string;
   vk: string;
   max: string;

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { MapPin, Phone, Instagram, Send, ArrowLeft } from 'lucide-react';
+import { MapPin, Phone, Send, ArrowLeft } from 'lucide-react';
 import { siteConfig } from '../data/siteConfig'; // Import config
 
 interface FooterProps {
@@ -72,18 +72,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate, isMainPage = false, onOpenC
                     <div className="flex flex-col md:items-end md:justify-center lg:items-start lg:justify-start">
                         {/* Social Icons - Row */}
                         <div className="flex items-center gap-4 mb-10 md:mb-6">
-                           {/* Instagram */}
-                           {contacts.instagram && (
-                               <a 
-                                 href={contacts.instagram} 
-                                 target="_blank" 
-                                 rel="noopener noreferrer"
-                                 className="w-14 h-14 rounded-full bg-[#5B7360] text-white flex items-center justify-center hover:bg-[#495C4D] transition-all duration-300 hover:-translate-y-1 shadow-md hover:shadow-lg"
-                               >
-                                 <Instagram size={26} />
-                               </a>
-                           )}
-                           {/* Telegram */}
+                               {/* Telegram */}
                            {contacts.telegram && (
                                <a 
                                  href={contacts.telegram} 

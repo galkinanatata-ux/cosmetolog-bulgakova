@@ -796,7 +796,6 @@ const AdminPanel: React.FC = () => {
                   <Field label="Телефон (для ссылки)" value={config.contacts.phone} onChange={v => handleContactChange('phone', v)} hint="+79039496603" />
                   <Field label="Телефон (отображение)" value={config.contacts.phoneDisplay} onChange={v => handleContactChange('phoneDisplay', v)} />
                   <Field label="Адрес" value={config.contacts.address} onChange={v => handleContactChange('address', v)} />
-                  <Field label="Instagram" value={config.contacts.instagram} onChange={v => handleContactChange('instagram', v)} type="url" />
                   <Field label="Telegram" value={config.contacts.telegram} onChange={v => handleContactChange('telegram', v)} type="url" />
                   <Field label="VK" value={config.contacts.vk} onChange={v => handleContactChange('vk', v)} type="url" />
                   <Field label="MAX" value={config.contacts.max} onChange={v => handleContactChange('max', v)} type="url" />
